@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box size</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .pad {
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+        }
+        
+        #first {
+            border: 2px solid rgb(17, 38, 70);
+            box-sizing: content-box;
+            background-color: rgba(211, 211, 211, 0.755);
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        
+        #second {
+            box-sizing: border-box;
+            background-color: rgba(211, 211, 211, 0.755);
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first" class="pad">first</div>
+    <div id="second" class="pad">second</div>
+</body>
+
+</html>

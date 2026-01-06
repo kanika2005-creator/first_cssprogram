@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>css transform</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: lightslategrey;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        
+        .box:hover {
+            transform: translate(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">rotate</div>
+
+</body>
+
+</html>
